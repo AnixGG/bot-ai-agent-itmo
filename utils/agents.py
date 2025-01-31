@@ -6,7 +6,7 @@ from utils.parser import parser_response, decrease
 
 id_key = os.environ.get("id_key")
 api_key = os.environ.get("api_key")
-api_search_key = os.environ.get("api_key")
+api_search_key = os.environ.get("api_search_key")
 
 
 class SearchContextAgent:
