@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  fastapi-service:
+    build: .
+    container_name: bot-ai-agent-itmo_2
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - TZ=UTC
+    volumes:
+      - ./logs:/app/logs

@@ -1,0 +1,33 @@
+2025-01-31 20:03:46 | INFO | Incoming request: POST http://localhost:8080/api/request
+Request body: {
+  "query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород",
+  "id": 1
+}
+2025-01-31 20:03:46 | INFO | Processing prediction request with id: 1
+2025-01-31 20:03:51 | ERROR | Internal error processing request 1: can only concatenate list (not "str") to list
+2025-01-31 20:03:51 | INFO | Request completed: POST http://localhost:8080/api/request
+Status: 500
+Response body: {"detail":"Internal server error"}
+Duration: 5.034s
+2025-01-31 20:06:59 | INFO | Incoming request: POST http://localhost:8080/api/request
+Request body: {
+  "query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород",
+  "id": 1
+}
+2025-01-31 20:06:59 | INFO | Processing prediction request with id: 1
+2025-01-31 20:07:04 | INFO | Successfully processed request 1
+2025-01-31 20:07:04 | INFO | Request completed: POST http://localhost:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"У\nОтвет сгенерирован при помощи модели yandexgpt","sources":["https://itmo.ru/ru/page/89/1._osnovnye_svedeniya.htm","https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://yandex.ru/maps/org/natsionalny_issledovatelskiy_universitet_itmo/1536000555/"]}
+Duration: 5.352s
+2025-01-31 20:08:56 | INFO | Incoming request: POST http://localhost:8080/api/request
+Request body: {
+  "query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород",
+  "id": 1
+}
+2025-01-31 20:08:56 | INFO | Processing prediction request with id: 1
+2025-01-31 20:09:01 | INFO | Successfully processed request 1
+2025-01-31 20:09:01 | INFO | Request completed: POST http://localhost:8080/api/request
+Status: 200
+Response body: {"id":1,"answer":2,"reasoning":"Университет ИТМО находится в Санкт-Петербурге. Юридический адрес главного корпуса указан на сайте университета: Кронверкский пр., д. 49, лит. А.! Ответ сгенерирован при помощи модели yandexgpt!","sources":["https://itmo.ru/ru/page/89/1._osnovnye_svedeniya.htm","https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%98%D0%A2%D0%9C%D0%9E","https://yandex.ru/maps/org/natsionalny_issledovatelskiy_universitet_itmo/1536000555/"]}
+Duration: 4.722s
