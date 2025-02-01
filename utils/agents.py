@@ -14,7 +14,7 @@ class SearchContextAgent:
         self.url = f"https://yandex.ru/search/xml?folderid={id_key}&apikey={api_search_key}&query="
 
     async def search(self, question):
-        self.url += question + "site:[itmo.ru]"
+        self.url += question + "+site%3Aitmo.ru"
         response = requests.get(self.url)
         if response.status_code != 200:
             return "Для этого вопроса нет контекста", ["Ссылки не использовались"]
